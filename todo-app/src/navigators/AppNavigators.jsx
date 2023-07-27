@@ -8,12 +8,13 @@ import OTPCodeScreen from '../Screens/auth/OTPCodeScreen';
 import CreatePasswordScreen from '../Screens/auth/CreatePasswordScreen';
 import HomeScreen from '../Screens/HomeScreen';
 import ProfileScreen from '../Screens/ProfileScreen';
+import AddTodoScreen from '../Screens/AddTodoScreen';
 
 const Stack = createNativeStackNavigator();
 
 const AppNavigators = () => {
     return (
-        <Stack.Navigator initialRouteName='Login'>
+        <Stack.Navigator initialRouteName='Home'>
             <Stack.Screen
                 name="Login"
                 component={LoginScreen}
@@ -52,6 +53,13 @@ const AppNavigators = () => {
             <Stack.Screen
                 name="Home"
                 component={HomeScreen}
+                options={{
+                    headerShown: false
+                }}
+            />
+            <Stack.Screen
+                name="AddTodo"
+                component={AddTodoScreen}
                 options={{
                     headerShown: false
                 }}

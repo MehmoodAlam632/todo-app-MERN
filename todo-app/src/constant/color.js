@@ -7,4 +7,5 @@ export const color = {
     slate_Gray: "#7a869a",
     iron: "#e0e2e6",
     shuttle_Gray: "#5e6c84",
+    mineShaft: "#1f1f1f",
 }

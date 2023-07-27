@@ -61,8 +61,8 @@ todoRoutes.route('/update/:id').post((req, res) => {
             res.status(200).json({
                 status: 200,
                 success: true,
-                message: "Todo update successfully!",
-                // data: todo
+                message: "Task updated successfully!",
+                data: todo
             })
         })
         .catch(error => {
@@ -77,7 +77,7 @@ todoRoutes.route('/delete/:id').post((req, res) => {
             res.status(200).json({
                 status: 200,
                 success: true,
-                message: "Todo delete successfully!",
+                message: "Task deleted successfully!",
                 // data: todo
             })
         })
@@ -93,7 +93,7 @@ todoRoutes.route('/add').post((req, res) => {
             res.status(201).json({
                 success: true,
                 status: 201,
-                message: 'Todo Added Successfully',
+                message: 'Task Added Successfully!',
                 data: todo
             });
         })

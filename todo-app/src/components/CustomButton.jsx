@@ -14,6 +14,7 @@ const CustomButton = ({
     title,
     on_Press,
     isLoader,
+    textStyle
 }) => {
     return (
         <TouchableOpacity
@@ -25,7 +26,7 @@ const CustomButton = ({
                 <ActivityIndicator size="small" color={color.white} />
             )}
             {title && (
-                <Text style={styles.text}>{isLoader ? "Submitting..." : title}</Text>
+                <Text style={[styles.text, textStyle]}>{isLoader ? "Submitting..." : title}</Text>
             )}
         </TouchableOpacity>
     );
