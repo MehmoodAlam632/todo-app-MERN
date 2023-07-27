@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "363352433615",
+    "project_id": "react-native-boiler-plat-896fd",
+    "storage_bucket": "react-native-boiler-plat-896fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363352433615:android:529671e858b54553b128ba",
+        "android_client_info": {
+          "package_name": "com.sty_mobile_project_boiler_plate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363352433615-genklcisqih6re2gg6oniem4hreh6nd0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sty_mobile_project_boiler_plate",
+            "certificate_hash": "9d17c7fe64dc2ebaeccd186435c183143e3f7bad"
+          }
+        },
+        {
+          "client_id": "363352433615-35q72l24lo71l9n3d2mr5gftg4e36oeb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2-giTgtEW-wXx9E74mywlGFz5S5F_WoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363352433615-35q72l24lo71l9n3d2mr5gftg4e36oeb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
