@@ -11,6 +11,9 @@ let Todo = require('./todo.model');
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+const db = require('./models');
 
 mongoose.connect('mongodb+srv://mehmoodalam:MongoDB123@cluster0.uq7gkp9.mongodb.net/todos')
     .then(() => console.log("Connected to database"))
