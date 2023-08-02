@@ -4,6 +4,7 @@ const db = require('../models');
 const User = db.user;
 
 verifyToken = (req, res, next) => {
+    console.log('req.headers :>> ', req.headers);
 
     function getToken(req) {
         if (
@@ -23,9 +24,9 @@ verifyToken = (req, res, next) => {
 
     jwt.verify(token, config.secret, (error, decoded) => {
         if (error) {
-            return res.status(401).send({ message: "Unauthorized!" })
+            return res.status(403).send({ message: "Unauthorized!" })
         };
-        req.user_Id = decoded.indexOf;
+        req.userId = decoded.id;;
         next();
     });
 };
